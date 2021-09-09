@@ -9,8 +9,8 @@
 
 ----------------------------------------------------------------------------------------------------------------------
 # Aleatorio
-  Translating the paste repository name is "Random"
-  Codes made with the objective to study the concepts learned in class.
+  Translating the paste repository name is "Random".
+ ###Codes made with the objective to study the concepts learned in class.
   Each folder refer to a program.
   
  # Guide: <br />
