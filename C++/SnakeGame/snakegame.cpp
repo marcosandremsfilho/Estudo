@@ -9,7 +9,7 @@
 #define cobra 254
 #define meioX 25
 #define meioY 10
-#define TEMPO 5
+#define TEMPO 1500
 using namespace std;
 
 char campo[MAXCIMA][MAXLADO];
