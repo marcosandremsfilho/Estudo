@@ -9,7 +9,7 @@
 #define cobra 254
 #define meioX 25
 #define meioY 10
-#define TEMPO 1500
+#define TEMPO 100
 using namespace std;
 
 char campo[MAXCIMA][MAXLADO];
@@ -31,6 +31,7 @@ void gera()
 
 void iniciaCampo()
 {
+  system("cls");
   for(int i = 0; i<= MAXCIMA; i++)
   {
     for(int j = 0; j<= MAXLADO; j++)
@@ -52,7 +53,6 @@ void logo()
     if (i == meioY - 2 && j == meioX - 2) campo[i][j] = 'A';
     if (i == meioY - 2 && j == meioX - 1) campo[i][j] = 'K';
     if (i == meioY - 2 && j == meioX) campo[i][j] = 'E';
-    if (i == meioY - 2 && j == meioX + 1) campo[i][j] = ' ';
     if (i == meioY - 2 && j == meioX + 2) campo[i][j] = 'G';
     if (i == meioY - 2 && j == meioX + 3) campo[i][j] = 'A';
     if (i == meioY - 2 && j == meioX + 4) campo[i][j] = 'M';
@@ -78,7 +78,6 @@ void logo()
     if (i == meioY + 2 && j == meioX - 3 ) campo[i][j] = 'O';
     if (i == meioY + 2 && j == meioX - 2 ) campo[i][j] = 'A';
     if (i == meioY + 2 && j == meioX - 1 ) campo[i][j] = 'O';
-    if (i == meioY + 2 && j == meioX) campo[i][j] = ' ';
     if (i == meioY + 2 && j == meioX + 1) campo[i][j] = 'T';
     if (i == meioY + 2 && j == meioX + 2 ) campo[i][j] = 'A';
     if (i == meioY + 2 && j == meioX + 3 ) campo[i][j] = 'D';
@@ -91,15 +90,43 @@ void logo()
 
 void apaga()
 {
-  for(int i = 1; i<= MAXCIMA - 1; i++)
+  for(int i = meioY - 2; i<= MAXCIMA - 1; i++)
   {
-    for(int j = 1; j<= MAXLADO - 1 ; j++)
+    for(int j = meioX - 4; j<= MAXLADO - 1 ; j++)
+    {
+      if(i == meioY - 2 && j >= meioX - 4 && j <= meioX + 5)
+      {
+       campo[i][j] = ' ';
+       Sleep(TEMPO);
+       iniciaCampo();
+     }
+     if(i == meioY - 1 && j >= meioX && j <= meioX + 1)
+     {
+      campo[i][j] = ' ';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if(i == meioY && j >= meioX - 6 && j <= meioX + 6)
+    {
+     campo[i][j] = ' ';
+     Sleep(TEMPO);
+     iniciaCampo();
+    }
+    if(i == meioY + 1 && j >= meioX && j <= meioX + 2)
     {
       campo[i][j] = ' ';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if(i == meioY + 2 && j >= meioX - 4 && j <= meioX + 6)
+    {
+      campo[i][j] = ' ';
+      Sleep(TEMPO);
+      iniciaCampo();
     }
   }
-  system("cls");
-  iniciaCampo();
+
+  }
 }
 
 int main()
