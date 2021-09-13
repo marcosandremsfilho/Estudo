@@ -48,42 +48,222 @@ void logo()
   {
     for(int j = 0; j<= MAXLADO; j++)
     {
-    if (i == meioY - 2 && j == meioX - 4) campo[i][j] = 'S';
-    if (i == meioY - 2 && j == meioX - 3) campo[i][j] = 'N';
-    if (i == meioY - 2 && j == meioX - 2) campo[i][j] = 'A';
-    if (i == meioY - 2 && j == meioX - 1) campo[i][j] = 'K';
-    if (i == meioY - 2 && j == meioX) campo[i][j] = 'E';
-    if (i == meioY - 2 && j == meioX + 2) campo[i][j] = 'G';
-    if (i == meioY - 2 && j == meioX + 3) campo[i][j] = 'A';
-    if (i == meioY - 2 && j == meioX + 4) campo[i][j] = 'M';
-    if (i == meioY - 2 && j == meioX + 5) campo[i][j] = 'E';
-    if (i == meioY -1 && j == meioX) campo[i][j] = 'B';
-    if (i == meioY -1 && j == meioX + 1) campo[i][j] = 'Y';
-    if (i == meioY && j == meioX - 5) campo[i][j] = 'M';
-    if (i == meioY && j == meioX - 4) campo[i][j] = 'A';
-    if (i == meioY && j == meioX - 3) campo[i][j] = 'R';
-    if (i == meioY && j == meioX - 2) campo[i][j] = 'C';
-    if (i == meioY && j == meioX - 1) campo[i][j] = 'O';
-    if (i == meioY && j == meioX) campo[i][j] = 'S';
-    if (i == meioY && j == meioX + 1) campo[i][j] = ' ';
-    if (i == meioY && j == meioX + 2) campo[i][j] = 'A';
-    if (i == meioY && j == meioX + 3) campo[i][j] = 'N';
-    if (i == meioY && j == meioX + 4) campo[i][j] = 'D';
-    if (i == meioY && j == meioX + 5) campo[i][j] = 'R';
-    if (i == meioY && j == meioX + 6) campo[i][j] = 'E';
-    if (i == meioY + 1 && j == meioX) campo[i][j] = 'A';
-    if (i == meioY + 1 && j == meioX + 1) campo[i][j] = 'N';
-    if (i == meioY + 1 && j == meioX + 2 ) campo[i][j] = 'D';
-    if (i == meioY + 2 && j == meioX - 4 ) campo[i][j] = 'J';
-    if (i == meioY + 2 && j == meioX - 3 ) campo[i][j] = 'O';
-    if (i == meioY + 2 && j == meioX - 2 ) campo[i][j] = 'A';
-    if (i == meioY + 2 && j == meioX - 1 ) campo[i][j] = 'O';
-    if (i == meioY + 2 && j == meioX + 1) campo[i][j] = 'T';
-    if (i == meioY + 2 && j == meioX + 2 ) campo[i][j] = 'A';
-    if (i == meioY + 2 && j == meioX + 3 ) campo[i][j] = 'D';
-    if (i == meioY + 2 && j == meioX + 4 ) campo[i][j] = 'I';
-    if (i == meioY + 2 && j == meioX + 5 ) campo[i][j] = 'N';
-    if (i == meioY + 2 && j == meioX + 6 ) campo[i][j] = 'I';
+    if (i == meioY - 2 && j == meioX - 4)
+    {
+      campo[i][j] = 'S';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY - 2 && j == meioX - 3)
+    {
+      campo[i][j] = 'N';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY - 2 && j == meioX - 2)
+    {
+      campo[i][j] = 'A';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY - 2 && j == meioX - 1)
+    {
+    campo[i][j] = 'K';
+    Sleep(TEMPO);
+    iniciaCampo();
+    }
+    if (i == meioY - 2 && j == meioX)
+    {
+    campo[i][j] = 'E';
+    Sleep(TEMPO);
+    iniciaCampo();
+    }
+    if (i == meioY - 2 && j == meioX + 2)
+    {
+      campo[i][j] = 'G';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY - 2 && j == meioX + 3)
+    {
+      campo[i][j] = 'A';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY - 2 && j == meioX + 4)
+    {
+    campo[i][j] = 'M';
+    Sleep(TEMPO);
+    iniciaCampo();
+    }
+    if (i == meioY - 2 && j == meioX + 5)
+    {
+    campo[i][j] = 'E';
+    Sleep(TEMPO);
+    iniciaCampo();
+    }
+    if (i == meioY -1 && j == meioX)
+    {
+    campo[i][j] = 'B';
+    Sleep(TEMPO);
+    iniciaCampo();
+    }
+    if (i == meioY -1 && j == meioX + 1)
+    {
+      campo[i][j] = 'Y';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX - 5)
+    {
+      campo[i][j] = 'M';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX - 4)
+    {
+      campo[i][j] = 'A';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX - 3)
+    {
+      campo[i][j] = 'R';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX - 2)
+    {
+      campo[i][j] = 'C';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX - 1)
+    {
+      campo[i][j] = 'O';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX)
+    {
+      campo[i][j] = 'S';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX + 1)
+    {
+      campo[i][j] = ' ';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX + 2)
+    {
+      campo[i][j] = 'A';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX + 3)
+    {
+      campo[i][j] = 'N';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX + 4)
+    {
+      campo[i][j] = 'D';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX + 5)
+    {
+      campo[i][j] = 'R';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY && j == meioX + 6)
+    {
+      campo[i][j] = 'E';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 1 && j == meioX)
+    {
+      campo[i][j] = 'A';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 1 && j == meioX + 1)
+    {
+      campo[i][j] = 'N';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 1 && j == meioX + 2 )
+    {
+      campo[i][j] = 'D';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 2 && j == meioX - 4 )
+    {
+      campo[i][j] = 'J';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 2 && j == meioX - 3 )
+    {
+      campo[i][j] = 'O';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 2 && j == meioX - 2 )
+    {
+      campo[i][j] = 'A';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 2 && j == meioX - 1 )
+    {
+      campo[i][j] = 'O';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 2 && j == meioX + 1)
+    {
+      campo[i][j] = 'T';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 2 && j == meioX + 2 )
+    {
+      campo[i][j] = 'A';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 2 && j == meioX + 3 )
+    {
+      campo[i][j] = 'D';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 2 && j == meioX + 4 )
+    {
+      campo[i][j] = 'I';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 2 && j == meioX + 5 )
+    {
+      campo[i][j] = 'N';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
+    if (i == meioY + 2 && j == meioX + 6 )
+    {
+      campo[i][j] = 'I';
+      Sleep(TEMPO);
+      iniciaCampo();
+    }
     }
   }
 }
@@ -92,7 +272,7 @@ void apaga()
 {
   for(int i = meioY - 2; i<= MAXCIMA - 1; i++)
   {
-    for(int j = meioX - 4; j<= MAXLADO - 1 ; j++)
+    for(int j = meioX - 6; j<= MAXLADO - 1 ; j++)
     {
       if(i == meioY - 2 && j >= meioX - 4 && j <= meioX + 5)
       {
@@ -128,6 +308,7 @@ void apaga()
 
   }
 }
+
 
 int main()
 {
